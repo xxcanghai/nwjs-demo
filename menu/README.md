@@ -44,3 +44,5 @@ menu git:(master) ✗ npm start
 
 # 关于TypeScript
 本应用使用TypeScript开发，如您只想使用JavaScript，则直接全局搜索，并删除所有`*.ts`即可。
+
+# 运行界面
