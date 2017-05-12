@@ -2,7 +2,7 @@
 NW.js 菜单栏Demo
 
 # 原文地址
-[http://xxcanghai.cnblogs.com/](http://xxcanghai.cnblogs.com/)
+[http://www.cnblogs.com/xxcanghai/p/6845160.html](http://www.cnblogs.com/xxcanghai/p/6845160.html)
 
 # 运行方法
 ## 1、首先在命令行进入此目录，执行安装npm包
