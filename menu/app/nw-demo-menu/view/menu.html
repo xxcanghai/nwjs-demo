@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Context Menu Page</title>
+</head>
+
+<body>
+    <h1>Context Menu Page</h1>
+    <a href="index.html">index.html</a>
+    <p>'Right click' to show context menu.</p>
+    <script>
+        
+        // Create an empty context menu
+        var menu = new nw.Menu();
+
+        // Add some items with label
+        menu.append(new nw.MenuItem({
+            label: 'Item A',
+            click: function () {
+                alert('You have clicked at "Item A"');
+            }
+        }));
+        menu.append(new nw.MenuItem({
+            label: 'Item B'
+        }));
+        menu.append(new nw.MenuItem({
+            type: 'separator'
+        }));
+        menu.append(new nw.MenuItem({
+            label: 'Item C'
+        }));
+
+        // Hooks the "contextmenu" event
+        document.body.addEventListener('contextmenu', function (ev) {
+            // Prevent showing default context menu
+            ev.preventDefault();
+            // Popup the native context menu at place you click
+            menu.popup(ev.x, ev.y);
+
+            return false;
+        }, false);
+    </script>
+</body>
+
+</html>

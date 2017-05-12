@@ -1,0 +1,22 @@
+{
+  "name": "nwjs-demo-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"gulp nw"
+  },
+  "author": "https://github.com/xxcanghai/nwjs-demo",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "nw-builder": "^3.2.0",
+    "@types/gulp": "^4.0.2",
+    "@types/gulp-util": "^3.0.31",
+    "@types/nw.js": "^0.13.6",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
+}
